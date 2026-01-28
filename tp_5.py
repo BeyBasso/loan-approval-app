@@ -181,3 +181,12 @@ with tab2:
 with tab3:
     st.header("📈 Performance du modèle")
     st.info("Cette section affiche les métriques validées lors de l'entraînement.")
+
+
+
+password=st.text_input("Mot de passe", type="martine1")
+if password==st.secrets["app_password"]:
+    st.success("Accès autorisé")
+else:
+    st.error("Accès refusé")
+    st.stop()
